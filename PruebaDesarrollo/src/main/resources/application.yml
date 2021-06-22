@@ -1,0 +1,22 @@
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5433/Prueba_Desarrollo
+        username: postgres
+        password: juli2009
+        
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        hibernate:
+            ddl-auto: none
+        show-sql: true
+        
+    application:
+        name: Prueba de Desarrollo
+    jackson:
+        serialization:
+            fail-on-empty-beans: false
+            
+info.name: Prueba de Desarrollo
+
+server:
+    port: 9090
