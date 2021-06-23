@@ -17,6 +17,3 @@ spring:
             fail-on-empty-beans: false
             
 info.name: Prueba de Desarrollo
-
-server:
-    port: 9090
