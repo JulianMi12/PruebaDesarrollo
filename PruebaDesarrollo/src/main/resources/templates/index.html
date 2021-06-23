@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css" th:href="@{/css/styles.css}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quileia</title>
+</head>
+
+<body>
+
+    <!--------------------------------------------------------------------- Barra de Navegacion ---------------------------------------------------------------------------->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="th:include="agentes.html"" >Agentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vias.html">Vías</a>
+                    </li>
+                </ul>
+                <a href="https://github.com/JulianMi12" class="nav-lin my-2 my-sm-0">Julian Miranda</a>
+            </div>
+        </div>
+    </nav>
+
+    <!----------------------------------------------------------------------- Contenido ---------------------------------------------------------------------------------->
+
+    <div class="container">
+        <div class="tittle">
+            <h1>Elija una Acción</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-7 mb-7 rows">
+                <div class="card border-info mb-6" style="max-width: 20rem;">
+                    <img class="card-img-top" src="../static/images/index/agentes.jpg" alt="Imagen sección agentes" th:src="@{/images/index/agentes.jpg}">
+                    <div class="card-header">Agentes de Tránsito</div>
+                    <div class="card-body">
+                        <p class="card-text">Consulta, crea, actualiza y elimina datos de los Agentes de Tránsito activos.</p>
+                        <a href="agentes.html" class="btn btn-info">Ingresar.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-7 mb-7 rows">
+                <div class="card border-info mb-6" style="max-width: 20rem;">
+                    <img class="card-img-top" src="../static/images/index/vias.jpg" alt="Imagen sección vias" th:src="@{/images/index/vias.jpg}">
+                    <div class="card-header">Vías de Tránsito</div>
+                    <div class="card-body">
+                        <p class="card-text">Consulta, crea, actualiza y elimina datos de las Vías de Tránsito activas.</p>
+                        <a href="vias.html" class="btn btn-info">Ingresar.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------------------------------- Footer -------------------------------------------------------------------------------------->
+
+    <footer class="py-5 bg-dark">
+        <div class="containerBlack ">
+            <p class="m-0 text-center text-white ">Prueba de desarrollo para la gestión de agentes y vías de tránsito.</p>
+        </div>
+    </footer>
+
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/prism.js" data-manual></script>
+    <script src="../static/js/custom.js"></script>
+
+</body>
+
+</html>
